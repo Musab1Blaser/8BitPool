@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed Dec  6 10:14:47 2023
+# Process ID: 32444
+# Current directory: C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - Joy/Basys3-Joystick-Interfacing/Basys3-Joystick-Interfacing
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7132 C:\Users\Musab\OneDrive - Habib University\3rd Semester\DLD\Project - Joy\Basys3-Joystick-Interfacing\Basys3-Joystick-Interfacing\test.xpr
+# Log file: C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - Joy/Basys3-Joystick-Interfacing/Basys3-Joystick-Interfacing/vivado.log
+# Journal file: C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - Joy/Basys3-Joystick-Interfacing/Basys3-Joystick-Interfacing\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - Joy/Basys3-Joystick-Interfacing/Basys3-Joystick-Interfacing/test.xpr}
+update_compile_order -fileset sources_1

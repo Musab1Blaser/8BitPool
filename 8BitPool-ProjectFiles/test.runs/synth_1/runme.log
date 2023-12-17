@@ -1,0 +1,1832 @@
+
+*** Running vivado
+    with args -log display.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source display.tcl
+
+
+
+****** Vivado v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source display.tcl -notrace
+Command: synth_design -top display -part xc7a35tcpg236-1
+Starting synth_design
+WARNING: [Vivado_Tcl 4-393] The 'Synthesis' target of the following IPs are stale, please generate the output products using the generate_target or synth_ip command before running synth_design.
+C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/ip/xadc_wiz_0/xadc_wiz_0.xci
+
+INFO: [IP_Flow 19-2162] IP 'xadc_wiz_0' is locked:
+* IP definition 'XADC Wizard (3.0)' for IP 'xadc_wiz_0' (customized with software release 2015.1) has a newer minor version in the IP Catalog.
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 19172
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1026.855 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'display' [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/display2.v:3]
+INFO: [Synth 8-6157] synthesizing module 'XADCdemo' [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/imports/hdl/XADCdemo.v:21]
+INFO: [Synth 8-6157] synthesizing module 'xadc_wiz_0' [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.runs/synth_1/.Xil/Vivado-30836-LAPTOP-D5M397KF/realtime/xadc_wiz_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'xadc_wiz_0' (1#1) [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.runs/synth_1/.Xil/Vivado-30836-LAPTOP-D5M397KF/realtime/xadc_wiz_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'eos_out' of module 'xadc_wiz_0' is unconnected for instance 'XLXI_7' [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/imports/hdl/XADCdemo.v:70]
+WARNING: [Synth 8-7023] instance 'XLXI_7' of module 'xadc_wiz_0' has 22 connections declared, but only 21 given [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/imports/hdl/XADCdemo.v:70]
+INFO: [Synth 8-6157] synthesizing module 'DigitToSeg' [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/imports/hdl/DigitToSeg.v:23]
+INFO: [Synth 8-6157] synthesizing module 'sevensegdecoder' [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/imports/hdl/sevensegdecoder.v:21]
+INFO: [Synth 8-226] default block is never used [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/imports/hdl/sevensegdecoder.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'sevensegdecoder' (2#1) [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/imports/hdl/sevensegdecoder.v:21]
+INFO: [Synth 8-6157] synthesizing module 'mux4_4bus' [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/imports/hdl/mux4_4bus.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'mux4_4bus' (3#1) [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/imports/hdl/mux4_4bus.v:21]
+INFO: [Synth 8-6157] synthesizing module 'segClkDevider' [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/imports/hdl/segClkDevider.v:21]
+	Parameter constantNumber bound to: 10000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'segClkDevider' (4#1) [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/imports/hdl/segClkDevider.v:21]
+INFO: [Synth 8-6157] synthesizing module 'counter3bit' [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/imports/hdl/counter3bit.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'counter3bit' (5#1) [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/imports/hdl/counter3bit.v:1]
+INFO: [Synth 8-6157] synthesizing module 'decoder_3_8' [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/imports/hdl/decoder3_8.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'decoder_3_8' (6#1) [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/imports/hdl/decoder3_8.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'DigitToSeg' (7#1) [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/imports/hdl/DigitToSeg.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'XADCdemo' (8#1) [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/imports/hdl/XADCdemo.v:21]
+INFO: [Synth 8-6157] synthesizing module 'clk_div' [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/clk_div.v:3]
+	Parameter div_value bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clk_div' (9#1) [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/clk_div.v:3]
+INFO: [Synth 8-6157] synthesizing module 'h_counter' [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/counter_10bit.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'h_counter' (10#1) [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/counter_10bit.v:3]
+INFO: [Synth 8-6157] synthesizing module 'v_counter' [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/v_counter.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'v_counter' (11#1) [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/v_counter.v:3]
+INFO: [Synth 8-6157] synthesizing module 'vga_sync' [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/vga_sync.v:3]
+	Parameter HD bound to: 640 - type: integer 
+	Parameter HF bound to: 16 - type: integer 
+	Parameter HR bound to: 96 - type: integer 
+	Parameter HB bound to: 48 - type: integer 
+	Parameter VD bound to: 480 - type: integer 
+	Parameter VF bound to: 10 - type: integer 
+	Parameter VR bound to: 2 - type: integer 
+	Parameter VB bound to: 33 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vga_sync' (12#1) [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/vga_sync.v:3]
+INFO: [Synth 8-6157] synthesizing module 'allMover' [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/allMover.v:3]
+INFO: [Synth 8-6157] synthesizing module 'moverModule' [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/moverModule.v:3]
+	Parameter MIN_X bound to: 55 - type: integer 
+	Parameter MAX_X bound to: 585 - type: integer 
+	Parameter MIN_Y bound to: 75 - type: integer 
+	Parameter MAX_Y bound to: 405 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'moverModule' (13#1) [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/moverModule.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'allMover' (14#1) [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/allMover.v:3]
+INFO: [Synth 8-6157] synthesizing module 'allCollider' [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/allCollider.v:3]
+INFO: [Synth 8-6157] synthesizing module 'collisionResolver' [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/collisionResolver.v:3]
+	Parameter radius bound to: 15 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'collisionResolver' (15#1) [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/collisionResolver.v:3]
+WARNING: [Synth 8-689] width (2) of port connection 'nextFlag' does not match port width (3) of module 'collisionResolver' [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/allCollider.v:126]
+WARNING: [Synth 8-689] width (2) of port connection 'nextFlag' does not match port width (3) of module 'collisionResolver' [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/allCollider.v:127]
+WARNING: [Synth 8-689] width (2) of port connection 'nextFlag' does not match port width (3) of module 'collisionResolver' [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/allCollider.v:128]
+WARNING: [Synth 8-689] width (2) of port connection 'nextFlag' does not match port width (3) of module 'collisionResolver' [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/allCollider.v:129]
+WARNING: [Synth 8-689] width (2) of port connection 'nextFlag' does not match port width (3) of module 'collisionResolver' [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/allCollider.v:130]
+WARNING: [Synth 8-689] width (2) of port connection 'nextFlag' does not match port width (3) of module 'collisionResolver' [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/allCollider.v:131]
+WARNING: [Synth 8-689] width (2) of port connection 'nextFlag' does not match port width (3) of module 'collisionResolver' [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/allCollider.v:133]
+WARNING: [Synth 8-689] width (2) of port connection 'nextFlag' does not match port width (3) of module 'collisionResolver' [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/allCollider.v:134]
+WARNING: [Synth 8-689] width (2) of port connection 'nextFlag' does not match port width (3) of module 'collisionResolver' [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/allCollider.v:135]
+WARNING: [Synth 8-689] width (2) of port connection 'nextFlag' does not match port width (3) of module 'collisionResolver' [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/allCollider.v:136]
+WARNING: [Synth 8-689] width (2) of port connection 'nextFlag' does not match port width (3) of module 'collisionResolver' [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/allCollider.v:137]
+WARNING: [Synth 8-689] width (2) of port connection 'nextFlag' does not match port width (3) of module 'collisionResolver' [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/allCollider.v:139]
+WARNING: [Synth 8-689] width (2) of port connection 'nextFlag' does not match port width (3) of module 'collisionResolver' [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/allCollider.v:140]
+WARNING: [Synth 8-689] width (2) of port connection 'nextFlag' does not match port width (3) of module 'collisionResolver' [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/allCollider.v:141]
+WARNING: [Synth 8-689] width (2) of port connection 'nextFlag' does not match port width (3) of module 'collisionResolver' [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/allCollider.v:142]
+WARNING: [Synth 8-689] width (2) of port connection 'nextFlag' does not match port width (3) of module 'collisionResolver' [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/allCollider.v:144]
+WARNING: [Synth 8-689] width (2) of port connection 'nextFlag' does not match port width (3) of module 'collisionResolver' [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/allCollider.v:145]
+WARNING: [Synth 8-689] width (2) of port connection 'nextFlag' does not match port width (3) of module 'collisionResolver' [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/allCollider.v:146]
+WARNING: [Synth 8-689] width (2) of port connection 'nextFlag' does not match port width (3) of module 'collisionResolver' [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/allCollider.v:148]
+WARNING: [Synth 8-689] width (2) of port connection 'nextFlag' does not match port width (3) of module 'collisionResolver' [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/allCollider.v:149]
+WARNING: [Synth 8-689] width (2) of port connection 'nextFlag' does not match port width (3) of module 'collisionResolver' [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/allCollider.v:151]
+INFO: [Synth 8-6155] done synthesizing module 'allCollider' (16#1) [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/allCollider.v:3]
+INFO: [Synth 8-6157] synthesizing module 'pix_gen_menu' [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/pix_gen_menu.v:3]
+INFO: [Synth 8-3876] $readmem data file 'start_button_data.mem' is read successfully [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/pix_gen_menu.v:27]
+INFO: [Synth 8-3876] $readmem data file 'start_button_pal.mem' is read successfully [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/pix_gen_menu.v:28]
+INFO: [Synth 8-3876] $readmem data file '8bitpool_data.mem' is read successfully [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/pix_gen_menu.v:30]
+INFO: [Synth 8-3876] $readmem data file '8bitpool_pal.mem' is read successfully [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/pix_gen_menu.v:31]
+INFO: [Synth 8-3876] $readmem data file 'balls_data.mem' is read successfully [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/pix_gen_menu.v:34]
+INFO: [Synth 8-3876] $readmem data file 'balls_pal.mem' is read successfully [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/pix_gen_menu.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'pix_gen_menu' (17#1) [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/pix_gen_menu.v:3]
+WARNING: [Synth 8-689] width (5) of port connection 'red' does not match port width (4) of module 'pix_gen_menu' [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/display2.v:777]
+WARNING: [Synth 8-689] width (5) of port connection 'green' does not match port width (4) of module 'pix_gen_menu' [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/display2.v:777]
+WARNING: [Synth 8-689] width (5) of port connection 'blue' does not match port width (4) of module 'pix_gen_menu' [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/display2.v:777]
+INFO: [Synth 8-6157] synthesizing module 'pix_gen_game_over' [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/pix_gen_game_over.v:3]
+INFO: [Synth 8-3876] $readmem data file 'Replay_data.mem' is read successfully [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/pix_gen_game_over.v:25]
+INFO: [Synth 8-3876] $readmem data file 'Replay_pal.mem' is read successfully [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/pix_gen_game_over.v:26]
+INFO: [Synth 8-3876] $readmem data file 'GameOver_data.mem' is read successfully [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/pix_gen_game_over.v:28]
+INFO: [Synth 8-3876] $readmem data file 'GameOver_pal.mem' is read successfully [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/pix_gen_game_over.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'pix_gen_game_over' (18#1) [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/pix_gen_game_over.v:3]
+WARNING: [Synth 8-689] width (5) of port connection 'red' does not match port width (4) of module 'pix_gen_game_over' [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/display2.v:780]
+WARNING: [Synth 8-689] width (5) of port connection 'green' does not match port width (4) of module 'pix_gen_game_over' [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/display2.v:780]
+WARNING: [Synth 8-689] width (5) of port connection 'blue' does not match port width (4) of module 'pix_gen_game_over' [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/display2.v:780]
+INFO: [Synth 8-6157] synthesizing module 'pix_gen_win' [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/pix_gen_win.v:3]
+INFO: [Synth 8-3876] $readmem data file 'winBall_data.mem' is read successfully [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/pix_gen_win.v:29]
+INFO: [Synth 8-3876] $readmem data file 'winBall_pal.mem' is read successfully [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/pix_gen_win.v:30]
+INFO: [Synth 8-3876] $readmem data file 'you_win_data.mem' is read successfully [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/pix_gen_win.v:32]
+INFO: [Synth 8-3876] $readmem data file 'you_win_pal.mem' is read successfully [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/pix_gen_win.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'pix_gen_win' (19#1) [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/pix_gen_win.v:3]
+WARNING: [Synth 8-689] width (5) of port connection 'red' does not match port width (4) of module 'pix_gen_win' [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/display2.v:783]
+WARNING: [Synth 8-689] width (5) of port connection 'green' does not match port width (4) of module 'pix_gen_win' [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/display2.v:783]
+WARNING: [Synth 8-689] width (5) of port connection 'blue' does not match port width (4) of module 'pix_gen_win' [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/display2.v:783]
+INFO: [Synth 8-6157] synthesizing module 'pix_gen_pool_2' [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/pix_gen_pool_2.v:3]
+	Parameter bg_border bound to: 1859 - type: integer 
+	Parameter bg_board bound to: 1430 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'ball3.mem' is read successfully [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/pix_gen_pool_2.v:75]
+INFO: [Synth 8-3876] $readmem data file 'score_text_data.mem' is read successfully [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/pix_gen_pool_2.v:117]
+INFO: [Synth 8-3876] $readmem data file 'score_text_pal.mem' is read successfully [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/pix_gen_pool_2.v:118]
+INFO: [Synth 8-3876] $readmem data file 'best_text_data.mem' is read successfully [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/pix_gen_pool_2.v:120]
+INFO: [Synth 8-3876] $readmem data file 'best_text_pal.mem' is read successfully [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/pix_gen_pool_2.v:121]
+INFO: [Synth 8-3876] $readmem data file '0_data.mem' is read successfully [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/pix_gen_pool_2.v:123]
+INFO: [Synth 8-3876] $readmem data file '0_pal.mem' is read successfully [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/pix_gen_pool_2.v:124]
+INFO: [Synth 8-3876] $readmem data file '1_data.mem' is read successfully [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/pix_gen_pool_2.v:126]
+INFO: [Synth 8-3876] $readmem data file '1_pal.mem' is read successfully [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/pix_gen_pool_2.v:127]
+INFO: [Synth 8-3876] $readmem data file '2_data.mem' is read successfully [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/pix_gen_pool_2.v:129]
+INFO: [Synth 8-3876] $readmem data file '2_pal.mem' is read successfully [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/pix_gen_pool_2.v:130]
+INFO: [Synth 8-3876] $readmem data file '3_data.mem' is read successfully [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/pix_gen_pool_2.v:132]
+INFO: [Synth 8-3876] $readmem data file '3_pal.mem' is read successfully [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/pix_gen_pool_2.v:133]
+INFO: [Synth 8-3876] $readmem data file '4_data.mem' is read successfully [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/pix_gen_pool_2.v:135]
+INFO: [Synth 8-3876] $readmem data file '4_pal.mem' is read successfully [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/pix_gen_pool_2.v:136]
+INFO: [Synth 8-3876] $readmem data file '5_data.mem' is read successfully [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/pix_gen_pool_2.v:138]
+INFO: [Synth 8-3876] $readmem data file '5_pal.mem' is read successfully [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/pix_gen_pool_2.v:139]
+INFO: [Synth 8-3876] $readmem data file '6_data.mem' is read successfully [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/pix_gen_pool_2.v:141]
+INFO: [Synth 8-3876] $readmem data file '6_pal.mem' is read successfully [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/pix_gen_pool_2.v:142]
+INFO: [Synth 8-3876] $readmem data file '7_data.mem' is read successfully [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/pix_gen_pool_2.v:144]
+INFO: [Synth 8-3876] $readmem data file '7_pal.mem' is read successfully [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/pix_gen_pool_2.v:145]
+INFO: [Synth 8-3876] $readmem data file '8_data.mem' is read successfully [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/pix_gen_pool_2.v:147]
+INFO: [Synth 8-3876] $readmem data file '8_pal.mem' is read successfully [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/pix_gen_pool_2.v:148]
+INFO: [Synth 8-3876] $readmem data file '9_data.mem' is read successfully [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/pix_gen_pool_2.v:150]
+INFO: [Synth 8-3876] $readmem data file '9_pal.mem' is read successfully [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/pix_gen_pool_2.v:151]
+INFO: [Synth 8-6157] synthesizing module 'cue_sprite' [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/stick_sprite.v:3]
+INFO: [Synth 8-3876] $readmem data file 'vert_cue_data_2.mem' is read successfully [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/stick_sprite.v:33]
+INFO: [Synth 8-3876] $readmem data file 'vert_cue_pal_4.mem' is read successfully [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/stick_sprite.v:34]
+INFO: [Synth 8-3876] $readmem data file 'diag_cue_data.mem' is read successfully [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/stick_sprite.v:36]
+INFO: [Synth 8-3876] $readmem data file 'diag_cue_pal.mem' is read successfully [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/stick_sprite.v:37]
+INFO: [Synth 8-6155] done synthesizing module 'cue_sprite' (20#1) [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/stick_sprite.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'pix_gen_pool_2' (21#1) [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/pix_gen_pool_2.v:3]
+WARNING: [Synth 8-689] width (5) of port connection 'red' does not match port width (4) of module 'pix_gen_pool_2' [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/display2.v:806]
+WARNING: [Synth 8-689] width (5) of port connection 'green' does not match port width (4) of module 'pix_gen_pool_2' [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/display2.v:806]
+WARNING: [Synth 8-689] width (5) of port connection 'blue' does not match port width (4) of module 'pix_gen_pool_2' [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/display2.v:806]
+INFO: [Synth 8-6155] done synthesizing module 'display' (22#1) [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/display2.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1040.812 ; gain = 13.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 1048.297 ; gain = 21.441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 1048.297 ; gain = 21.441
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.125 . Memory (MB): peak = 1048.297 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/constrs_1/imports/constraints/Basys3_Master.xdc]
+Finished Parsing XDC File [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/constrs_1/imports/constraints/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/constrs_1/imports/constraints/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/display_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/display_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1147.578 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 1147.578 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:17 . Memory (MB): peak = 1147.578 ; gain = 120.723
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:17 . Memory (MB): peak = 1147.578 ; gain = 120.723
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for x1/XLXI_7. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:17 . Memory (MB): peak = 1147.578 ; gain = 120.723
+---------------------------------------------------------------------------------
+DSP Debug: swapped A/B pins for adder 000001DB9E756510
+DSP Debug: swapped A/B pins for adder 000001DBA2238E50
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:26 . Memory (MB): peak = 1147.578 ; gain = 120.723
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   33 Bit       Adders := 1     
+	   2 Input   32 Bit       Adders := 62    
+	   3 Input   32 Bit       Adders := 65    
+	   4 Input   32 Bit       Adders := 1     
+	   3 Input   19 Bit       Adders := 7     
+	   3 Input   18 Bit       Adders := 6     
+	   3 Input   14 Bit       Adders := 2     
+	   2 Input   13 Bit       Adders := 2     
+	   2 Input   12 Bit       Adders := 40    
+	   4 Input   12 Bit       Adders := 1     
+	   3 Input   12 Bit       Adders := 15    
+	   2 Input   11 Bit       Adders := 28    
+	   3 Input   11 Bit       Adders := 14    
+	   2 Input   10 Bit       Adders := 8     
+	   3 Input   10 Bit       Adders := 1     
+	   3 Input    9 Bit       Adders := 3     
+	   2 Input    7 Bit       Adders := 7     
+	   3 Input    6 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 46    
+	   2 Input    3 Bit       Adders := 1     
+	   7 Input    3 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 22    
+	   2 Input    1 Bit       Adders := 1     
++---Registers : 
+	               33 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               11 Bit    Registers := 28    
+	               10 Bit    Registers := 3     
+	                7 Bit    Registers := 8     
+	                5 Bit    Registers := 112   
+	                4 Bit    Registers := 39    
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 23    
+	                1 Bit    Registers := 20    
++---Multipliers : 
+	               6x32  Multipliers := 5     
+	               4x32  Multipliers := 1     
+	               3x32  Multipliers := 4     
+	              32x32  Multipliers := 42    
+	               8x32  Multipliers := 4     
+	               7x32  Multipliers := 1     
++---Muxes : 
+	   2 Input   33 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 1     
+	   2 Input   11 Bit        Muxes := 44    
+	   2 Input   10 Bit        Muxes := 21    
+	   2 Input    7 Bit        Muxes := 8     
+	   3 Input    7 Bit        Muxes := 7     
+	   2 Input    5 Bit        Muxes := 198   
+	   3 Input    5 Bit        Muxes := 84    
+	   2 Input    4 Bit        Muxes := 42    
+	  10 Input    4 Bit        Muxes := 4     
+	   3 Input    4 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 7     
+	   5 Input    4 Bit        Muxes := 3     
+	   3 Input    3 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 23    
+	  11 Input    1 Bit        Muxes := 4     
+	   2 Input    1 Bit        Muxes := 92    
+	   7 Input    1 Bit        Muxes := 1     
+	   9 Input    1 Bit        Muxes := 15    
+	   4 Input    1 Bit        Muxes := 14    
+	   5 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP blue3, operation Mode is: A*(B:0x36).
+DSP Report: operator blue3 is absorbed into DSP blue3.
+Why this net has no driver: _order_recur <const0>
+Why this net has no driver: _order_recur <const0>
+DSP Report: Generating DSP blue3, operation Mode is: A*(B:0x2a).
+DSP Report: operator blue3 is absorbed into DSP blue3.
+DSP Report: Generating DSP blue2, operation Mode is: PCIN+(A:0x0):B+(C:0xfffffffffe38).
+DSP Report: operator blue2 is absorbed into DSP blue2.
+Why this net has no driver: _order_recur <const0>
+Why this net has no driver: _order_recur <const0>
+Why this net has no driver: _order_recur <const0>
+Why this net has no driver: _order_recur <const0>
+Why this net has no driver: _order_recur <const0>
+Why this net has no driver: _order_recur <const0>
+Why this net has no driver: _order_recur <const0>
+Why this net has no driver: _order_recur <const0>
+Why this net has no driver: _order_recur <const0>
+Why this net has no driver: _order_recur <const0>
+Why this net has no driver: _order_recur <const0>
+Why this net has no driver: _order_recur <const0>
+Why this net has no driver: _order_recur <const0>
+Why this net has no driver: _order_recur <const0>
+Why this net has no driver: _order_recur <const0>
+Why this net has no driver: _order_recur <const0>
+Why this net has no driver: _order_recur <const0>
+Why this net has no driver: _order_recur <const0>
+Why this net has no driver: _order_recur <const0>
+Why this net has no driver: _order_recur <const0>
+Why this net has no driver: _order_recur <const0>
+Why this net has no driver: _order_recur <const0>
+Why this net has no driver: _order_recur <const0>
+Why this net has no driver: _order_recur <const0>
+Why this net has no driver: _order_recur <const0>
+Why this net has no driver: _order_recur <const0>
+Why this net has no driver: _order_recur <const0>
+DSP Report: Generating DSP blue4, operation Mode is: A*(B:0x1e).
+DSP Report: operator blue4 is absorbed into DSP blue4.
+DSP Report: Generating DSP blue3, operation Mode is: PCIN+(A:0x0):B+(C:0xe).
+DSP Report: operator blue3 is absorbed into DSP blue3.
+DSP Report: Generating DSP blue4, operation Mode is: A*(B:0x1e).
+DSP Report: operator blue4 is absorbed into DSP blue4.
+DSP Report: Generating DSP blue3, operation Mode is: PCIN+(A:0x0):B+(C:0xe).
+DSP Report: operator blue3 is absorbed into DSP blue3.
+DSP Report: Generating DSP blue4, operation Mode is: A*(B:0x1e).
+DSP Report: operator blue4 is absorbed into DSP blue4.
+DSP Report: Generating DSP blue3, operation Mode is: PCIN+(A:0x0):B+(C:0xe).
+DSP Report: operator blue3 is absorbed into DSP blue3.
+DSP Report: Generating DSP blue4, operation Mode is: A*(B:0x1e).
+DSP Report: operator blue4 is absorbed into DSP blue4.
+DSP Report: Generating DSP blue3, operation Mode is: PCIN+(A:0x0):B+(C:0xe).
+DSP Report: operator blue3 is absorbed into DSP blue3.
+DSP Report: Generating DSP blue4, operation Mode is: A*(B:0x1e).
+DSP Report: operator blue4 is absorbed into DSP blue4.
+DSP Report: Generating DSP blue3, operation Mode is: PCIN+(A:0x0):B+(C:0xe).
+DSP Report: operator blue3 is absorbed into DSP blue3.
+DSP Report: Generating DSP blue4, operation Mode is: A*(B:0x1e).
+DSP Report: operator blue4 is absorbed into DSP blue4.
+DSP Report: Generating DSP blue3, operation Mode is: PCIN+(A:0x0):B+(C:0xe).
+DSP Report: operator blue3 is absorbed into DSP blue3.
+DSP Report: Generating DSP blue4, operation Mode is: A*(B:0x1e).
+DSP Report: operator blue4 is absorbed into DSP blue4.
+DSP Report: Generating DSP blue3, operation Mode is: PCIN+(A:0x0):B+(C:0xe).
+DSP Report: operator blue3 is absorbed into DSP blue3.
+DSP Report: Generating DSP blue4, operation Mode is: A*(B:0x1e).
+DSP Report: operator blue4 is absorbed into DSP blue4.
+DSP Report: Generating DSP blue3, operation Mode is: PCIN+(A:0x0):B+(C:0xe).
+DSP Report: operator blue3 is absorbed into DSP blue3.
+DSP Report: Generating DSP blue4, operation Mode is: A*(B:0x1e).
+DSP Report: operator blue4 is absorbed into DSP blue4.
+DSP Report: Generating DSP blue3, operation Mode is: PCIN+(A:0x0):B+(C:0xe).
+DSP Report: operator blue3 is absorbed into DSP blue3.
+DSP Report: Generating DSP blue4, operation Mode is: A*(B:0x1e).
+DSP Report: operator blue4 is absorbed into DSP blue4.
+DSP Report: Generating DSP blue3, operation Mode is: PCIN+(A:0x0):B+(C:0xe).
+DSP Report: operator blue3 is absorbed into DSP blue3.
+DSP Report: Generating DSP blue4, operation Mode is: A*(B:0x1e).
+DSP Report: operator blue4 is absorbed into DSP blue4.
+DSP Report: Generating DSP blue3, operation Mode is: PCIN+(A:0x0):B+(C:0xe).
+DSP Report: operator blue3 is absorbed into DSP blue3.
+DSP Report: Generating DSP blue4, operation Mode is: A*(B:0x1e).
+DSP Report: operator blue4 is absorbed into DSP blue4.
+DSP Report: Generating DSP blue3, operation Mode is: PCIN+(A:0x0):B+(C:0xe).
+DSP Report: operator blue3 is absorbed into DSP blue3.
+DSP Report: Generating DSP blue4, operation Mode is: A*(B:0x1e).
+DSP Report: operator blue4 is absorbed into DSP blue4.
+DSP Report: Generating DSP blue3, operation Mode is: PCIN+(A:0x0):B+(C:0xe).
+DSP Report: operator blue3 is absorbed into DSP blue3.
+DSP Report: Generating DSP blue2, operation Mode is: C+A*(B:0x39).
+DSP Report: operator blue2 is absorbed into DSP blue2.
+DSP Report: operator blue3 is absorbed into DSP blue2.
+DSP Report: Generating DSP blue2, operation Mode is: C+A*(B:0x39).
+DSP Report: operator blue2 is absorbed into DSP blue2.
+DSP Report: operator blue3 is absorbed into DSP blue2.
+DSP Report: Generating DSP blue3, operation Mode is: A*(B:0x39).
+DSP Report: operator blue3 is absorbed into DSP blue3.
+DSP Report: Generating DSP blue2, operation Mode is: PCIN+(A:0x0):B+(C:0x4d).
+DSP Report: operator blue2 is absorbed into DSP blue2.
+DSP Report: Generating DSP blue2, operation Mode is: PCIN+(A:0x0):B.
+DSP Report: operator blue2 is absorbed into DSP blue2.
+DSP Report: Generating DSP blue3, operation Mode is: A*(B:0x39).
+DSP Report: operator blue3 is absorbed into DSP blue3.
+DSP Report: Generating DSP blue2, operation Mode is: PCIN+(A:0x0):B+C.
+DSP Report: operator blue2 is absorbed into DSP blue2.
+DSP Report: Generating DSP dig35, operation Mode is: (A:0x3d090)*B.
+DSP Report: operator dig35 is absorbed into DSP dig35.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP blue3, operation Mode is: A*(B:0x34).
+DSP Report: operator blue3 is absorbed into DSP blue3.
+DSP Report: Generating DSP blue2, operation Mode is: PCIN+(A:0x0):B+(C:0xfffffffffede).
+DSP Report: operator blue2 is absorbed into DSP blue2.
+DSP Report: Generating DSP colText3, operation Mode is: A*(B:0xa1).
+DSP Report: operator colText3 is absorbed into DSP colText3.
+DSP Report: Generating DSP colText2, operation Mode is: PCIN+(A:0x0):B+(C:0xffffffffff0d).
+DSP Report: operator colText2 is absorbed into DSP colText2.
+DSP Report: Generating DSP blue3, operation Mode is: A*(B:0x99).
+DSP Report: operator blue3 is absorbed into DSP blue3.
+DSP Report: Generating DSP blue2, operation Mode is: PCIN+(A:0x0):B+(C:0xffffffffff0c).
+DSP Report: operator blue2 is absorbed into DSP blue2.
+DSP Report: Generating DSP blue3, operation Mode is: A*(B:0x7e).
+DSP Report: operator blue3 is absorbed into DSP blue3.
+DSP Report: Generating DSP blue2, operation Mode is: PCIN+(A:0x0):B+(C:0xfffffffffef9).
+DSP Report: operator blue2 is absorbed into DSP blue2.
+DSP Report: Generating DSP blue3, operation Mode is: A*(B:0xc4).
+DSP Report: operator blue3 is absorbed into DSP blue3.
+DSP Report: Generating DSP blue2, operation Mode is: PCIN+(A:0x0):B+(C:0xffffffffff18).
+DSP Report: operator blue2 is absorbed into DSP blue2.
+DSP Report: Generating DSP OVER/blue3, operation Mode is: A*(B:0xa0).
+DSP Report: operator OVER/blue3 is absorbed into DSP OVER/blue3.
+DSP Report: Generating DSP OVER/blue2, operation Mode is: PCIN+(A:0x0):B2+(C:0xffffffffff11).
+DSP Report: register u2/h_count_reg is absorbed into DSP OVER/blue2.
+DSP Report: operator OVER/blue2 is absorbed into DSP OVER/blue2.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:25 ; elapsed = 00:05:09 . Memory (MB): peak = 1797.164 ; gain = 770.309
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: Generating DSP v_x24, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+DSP Report: operator v_x24 is absorbed into DSP v_x24.
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping	Report
++------------------+------------+---------------+----------------+
+|Module Name       | RTL Object | Depth x Width | Implemented As | 
++------------------+------------+---------------+----------------+
+|pix_gen_menu      | p_0_out    | 8192x8        | LUT            | 
+|pix_gen_menu      | p_0_out    | 128x11        | LUT            | 
+|pix_gen_menu      | p_0_out    | 8192x8        | LUT            | 
+|pix_gen_menu      | p_0_out    | 256x12        | LUT            | 
+|pix_gen_menu      | p_0_out    | 16384x8       | LUT            | 
+|pix_gen_menu      | p_0_out    | 128x12        | LUT            | 
+|pix_gen_game_over | p_0_out    | 8192x8        | LUT            | 
+|pix_gen_game_over | p_0_out    | 256x12        | LUT            | 
+|pix_gen_game_over | p_0_out    | 1024x8        | LUT            | 
+|pix_gen_game_over | p_0_out    | 256x12        | LUT            | 
+|pix_gen_win       | p_0_out    | 4096x8        | LUT            | 
+|pix_gen_win       | p_0_out    | 128x12        | LUT            | 
+|pix_gen_win       | p_0_out    | 8192x8        | LUT            | 
+|pix_gen_win       | p_0_out    | 256x12        | LUT            | 
+|cue_sprite        | p_0_out    | 512x8         | LUT            | 
+|cue_sprite        | p_0_out    | 256x12        | LUT            | 
+|cue_sprite        | p_0_out    | 4096x8        | LUT            | 
+|cue_sprite        | p_0_out    | 128x12        | LUT            | 
+|cue_sprite        | p_0_out    | 512x8         | LUT            | 
+|cue_sprite        | p_0_out    | 256x12        | LUT            | 
+|cue_sprite        | p_0_out    | 4096x8        | LUT            | 
+|cue_sprite        | p_0_out    | 128x12        | LUT            | 
+|cue_sprite        | p_0_out    | 512x8         | LUT            | 
+|cue_sprite        | p_0_out    | 256x12        | LUT            | 
+|cue_sprite        | p_0_out    | 4096x8        | LUT            | 
+|cue_sprite        | p_0_out    | 128x12        | LUT            | 
+|cue_sprite        | p_0_out    | 512x8         | LUT            | 
+|cue_sprite        | p_0_out    | 256x12        | LUT            | 
+|cue_sprite        | p_0_out    | 4096x8        | LUT            | 
+|cue_sprite        | p_0_out    | 128x12        | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 2048x8        | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 128x12        | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 1024x8        | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 128x12        | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 2048x8        | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 128x12        | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 512x8         | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 128x12        | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 512x7         | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 64x12         | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 512x8         | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 128x12        | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 512x8         | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 128x12        | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 512x8         | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 128x12        | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 512x8         | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 128x12        | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 512x8         | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 128x12        | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 512x8         | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 128x12        | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 512x8         | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 128x12        | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 512x8         | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 128x12        | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 512x8         | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 128x12        | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 512x7         | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 64x12         | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 512x8         | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 128x12        | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 512x8         | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 128x12        | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 512x8         | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 128x12        | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 512x8         | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 128x12        | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 512x8         | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 128x12        | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 512x8         | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 128x12        | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 512x8         | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 128x12        | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 512x8         | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 128x12        | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 512x8         | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 128x12        | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 512x7         | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 64x12         | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 512x8         | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 128x12        | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 512x8         | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 128x12        | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 512x8         | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 128x12        | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 512x8         | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 128x12        | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 512x8         | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 128x12        | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 512x8         | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 128x12        | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 512x8         | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 128x12        | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 512x8         | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 128x12        | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 512x8         | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 128x12        | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 512x7         | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 64x12         | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 512x8         | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 128x12        | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 512x8         | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 128x12        | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 512x8         | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 128x12        | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 512x8         | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 128x12        | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 512x8         | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 128x12        | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 512x8         | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 128x12        | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 512x8         | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 128x12        | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 512x8         | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 128x12        | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 1024x1        | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 1024x1        | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 1024x1        | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 1024x1        | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 1024x1        | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 1024x1        | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 1024x1        | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 1024x1        | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 1024x1        | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 1024x1        | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 1024x1        | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 1024x1        | LUT            | 
+|pix_gen_pool_2    | p_0_out    | 1024x1        | LUT            | 
+|display           | p_0_out    | 2048x8        | LUT            | 
+|display           | p_0_out    | 128x12        | LUT            | 
+|display           | p_0_out    | 1024x8        | LUT            | 
+|display           | p_0_out    | 128x12        | LUT            | 
+|display           | p_0_out    | 2048x8        | LUT            | 
+|display           | p_0_out    | 128x12        | LUT            | 
+|display           | p_0_out    | 512x8         | LUT            | 
+|display           | p_0_out    | 128x12        | LUT            | 
+|display           | p_0_out    | 512x7         | LUT            | 
+|display           | p_0_out    | 64x12         | LUT            | 
+|display           | p_0_out    | 512x8         | LUT            | 
+|display           | p_0_out    | 128x12        | LUT            | 
+|display           | p_0_out    | 512x8         | LUT            | 
+|display           | p_0_out    | 128x12        | LUT            | 
+|display           | p_0_out    | 512x8         | LUT            | 
+|display           | p_0_out    | 128x12        | LUT            | 
+|display           | p_0_out    | 512x8         | LUT            | 
+|display           | p_0_out    | 128x12        | LUT            | 
+|display           | p_0_out    | 512x8         | LUT            | 
+|display           | p_0_out    | 512x8         | LUT            | 
+|display           | p_0_out    | 128x12        | LUT            | 
+|display           | p_0_out    | 512x8         | LUT            | 
+|display           | p_0_out    | 128x12        | LUT            | 
+|display           | p_0_out    | 512x8         | LUT            | 
+|display           | p_0_out    | 128x12        | LUT            | 
+|display           | p_0_out    | 512x8         | LUT            | 
+|display           | p_0_out    | 128x12        | LUT            | 
+|display           | p_0_out    | 512x7         | LUT            | 
+|display           | p_0_out    | 64x12         | LUT            | 
+|display           | p_0_out    | 512x8         | LUT            | 
+|display           | p_0_out    | 128x12        | LUT            | 
+|display           | p_0_out    | 512x8         | LUT            | 
+|display           | p_0_out    | 128x12        | LUT            | 
+|display           | p_0_out    | 512x8         | LUT            | 
+|display           | p_0_out    | 128x12        | LUT            | 
+|display           | p_0_out    | 512x8         | LUT            | 
+|display           | p_0_out    | 128x12        | LUT            | 
+|display           | p_0_out    | 512x8         | LUT            | 
+|display           | p_0_out    | 128x12        | LUT            | 
+|display           | p_0_out    | 512x8         | LUT            | 
+|display           | p_0_out    | 128x12        | LUT            | 
+|display           | p_0_out    | 512x8         | LUT            | 
+|display           | p_0_out    | 128x12        | LUT            | 
+|display           | p_0_out    | 512x8         | LUT            | 
+|display           | p_0_out    | 128x12        | LUT            | 
+|display           | p_0_out    | 512x8         | LUT            | 
+|display           | p_0_out    | 128x12        | LUT            | 
+|display           | p_0_out    | 512x7         | LUT            | 
+|display           | p_0_out    | 64x12         | LUT            | 
+|display           | p_0_out    | 512x8         | LUT            | 
+|display           | p_0_out    | 128x12        | LUT            | 
+|display           | p_0_out    | 512x8         | LUT            | 
+|display           | p_0_out    | 128x12        | LUT            | 
+|display           | p_0_out    | 512x8         | LUT            | 
+|display           | p_0_out    | 128x12        | LUT            | 
+|display           | p_0_out    | 512x8         | LUT            | 
+|display           | p_0_out    | 128x12        | LUT            | 
+|display           | p_0_out    | 512x8         | LUT            | 
+|display           | p_0_out    | 128x12        | LUT            | 
+|display           | p_0_out    | 512x8         | LUT            | 
+|display           | p_0_out    | 128x12        | LUT            | 
+|display           | p_0_out    | 512x8         | LUT            | 
+|display           | p_0_out    | 128x12        | LUT            | 
+|display           | p_0_out    | 512x8         | LUT            | 
+|display           | p_0_out    | 128x12        | LUT            | 
+|display           | p_0_out    | 512x8         | LUT            | 
+|display           | p_0_out    | 128x12        | LUT            | 
+|display           | p_0_out    | 512x7         | LUT            | 
+|display           | p_0_out    | 64x12         | LUT            | 
+|display           | p_0_out    | 512x8         | LUT            | 
+|display           | p_0_out    | 128x12        | LUT            | 
+|display           | p_0_out    | 512x8         | LUT            | 
+|display           | p_0_out    | 128x12        | LUT            | 
+|display           | p_0_out    | 512x8         | LUT            | 
+|display           | p_0_out    | 128x12        | LUT            | 
+|display           | p_0_out    | 512x8         | LUT            | 
+|display           | p_0_out    | 128x12        | LUT            | 
+|display           | p_0_out    | 512x8         | LUT            | 
+|display           | p_0_out    | 128x12        | LUT            | 
+|display           | p_0_out    | 512x8         | LUT            | 
+|display           | p_0_out    | 128x12        | LUT            | 
+|display           | p_0_out    | 512x8         | LUT            | 
+|display           | p_0_out    | 128x12        | LUT            | 
+|display           | p_0_out    | 512x8         | LUT            | 
+|display           | p_0_out    | 128x12        | LUT            | 
+|display           | p_0_out    | 1024x1        | LUT            | 
+|display           | p_0_out    | 1024x1        | LUT            | 
+|display           | p_0_out    | 1024x1        | LUT            | 
+|display           | p_0_out    | 1024x1        | LUT            | 
+|display           | p_0_out    | 1024x1        | LUT            | 
+|display           | p_0_out    | 1024x1        | LUT            | 
+|display           | p_0_out    | 1024x1        | LUT            | 
+|display           | p_0_out    | 1024x1        | LUT            | 
+|display           | p_0_out    | 1024x1        | LUT            | 
+|display           | p_0_out    | 1024x1        | LUT            | 
+|display           | p_0_out    | 1024x1        | LUT            | 
+|display           | p_0_out    | 1024x1        | LUT            | 
+|display           | p_0_out    | 1024x1        | LUT            | 
+|cue_sprite        | p_0_out    | 512x8         | LUT            | 
+|cue_sprite        | p_0_out    | 256x12        | LUT            | 
+|cue_sprite        | p_0_out    | 4096x8        | LUT            | 
+|cue_sprite        | p_0_out    | 128x12        | LUT            | 
+|cue_sprite        | p_0_out    | 512x8         | LUT            | 
+|cue_sprite        | p_0_out    | 256x12        | LUT            | 
+|cue_sprite        | p_0_out    | 4096x8        | LUT            | 
+|cue_sprite        | p_0_out    | 128x12        | LUT            | 
+|cue_sprite        | p_0_out    | 512x8         | LUT            | 
+|cue_sprite        | p_0_out    | 256x12        | LUT            | 
+|cue_sprite        | p_0_out    | 4096x8        | LUT            | 
+|cue_sprite        | p_0_out    | 128x12        | LUT            | 
+|cue_sprite        | p_0_out    | 512x8         | LUT            | 
+|cue_sprite        | p_0_out    | 256x12        | LUT            | 
+|cue_sprite        | p_0_out    | 4096x8        | LUT            | 
+|cue_sprite        | p_0_out    | 128x12        | LUT            | 
+|pix_gen_menu      | p_0_out    | 8192x8        | LUT            | 
+|pix_gen_menu      | p_0_out    | 128x11        | LUT            | 
+|pix_gen_menu      | p_0_out    | 8192x8        | LUT            | 
+|pix_gen_menu      | p_0_out    | 16384x8       | LUT            | 
+|pix_gen_menu      | p_0_out    | 128x12        | LUT            | 
+|display           | p_0_out    | 8192x8        | LUT            | 
+|display           | p_0_out    | 256x12        | LUT            | 
+|display           | p_0_out    | 1024x8        | LUT            | 
+|display           | p_0_out    | 256x12        | LUT            | 
++------------------+------------+---------------+----------------+
+
+
+DSP: Preliminary Mapping	Report (see note below)
++------------------+------------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name       | DSP Mapping                        | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------------+------------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|display           | A*(B:0x36)                         | 11     | 6      | -      | -      | 17     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|display           | A*(B:0x2a)                         | 10     | 6      | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|display           | PCIN+(A:0x0):B+(C:0xfffffffffe38)  | 30     | 10     | 10     | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pix_gen_pool_2    | A*(B:0x1e)                         | 10     | 5      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|display           | PCIN+(A:0x0):B+(C:0xe)             | 30     | 10     | 4      | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pix_gen_pool_2    | A*(B:0x1e)                         | 10     | 5      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|display           | PCIN+(A:0x0):B+(C:0xe)             | 30     | 10     | 4      | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pix_gen_pool_2    | A*(B:0x1e)                         | 10     | 5      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|display           | PCIN+(A:0x0):B+(C:0xe)             | 30     | 10     | 4      | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pix_gen_pool_2    | A*(B:0x1e)                         | 10     | 5      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|display           | PCIN+(A:0x0):B+(C:0xe)             | 30     | 10     | 4      | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pix_gen_pool_2    | A*(B:0x1e)                         | 10     | 5      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|display           | PCIN+(A:0x0):B+(C:0xe)             | 30     | 10     | 4      | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pix_gen_pool_2    | A*(B:0x1e)                         | 10     | 5      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|display           | PCIN+(A:0x0):B+(C:0xe)             | 30     | 10     | 4      | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pix_gen_pool_2    | A*(B:0x1e)                         | 10     | 5      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|display           | PCIN+(A:0x0):B+(C:0xe)             | 30     | 10     | 4      | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pix_gen_pool_2    | A*(B:0x1e)                         | 10     | 5      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|display           | PCIN+(A:0x0):B+(C:0xe)             | 30     | 10     | 4      | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pix_gen_pool_2    | A*(B:0x1e)                         | 10     | 5      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|display           | PCIN+(A:0x0):B+(C:0xe)             | 30     | 10     | 4      | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pix_gen_pool_2    | A*(B:0x1e)                         | 10     | 5      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|display           | PCIN+(A:0x0):B+(C:0xe)             | 30     | 10     | 4      | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pix_gen_pool_2    | A*(B:0x1e)                         | 10     | 5      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|display           | PCIN+(A:0x0):B+(C:0xe)             | 30     | 10     | 4      | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pix_gen_pool_2    | A*(B:0x1e)                         | 10     | 5      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|display           | PCIN+(A:0x0):B+(C:0xe)             | 30     | 10     | 4      | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pix_gen_pool_2    | A*(B:0x1e)                         | 10     | 5      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|display           | PCIN+(A:0x0):B+(C:0xe)             | 30     | 10     | 4      | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|cue_sprite        | C+A*(B:0x39)                       | 12     | 6      | 12     | -      | 12     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|cue_sprite        | C+A*(B:0x39)                       | 12     | 6      | 12     | -      | 12     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|cue_sprite        | A*(B:0x39)                         | 12     | 6      | -      | -      | 18     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|cue_sprite        | PCIN+(A:0x0):B+(C:0x4d)            | 30     | 12     | 7      | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|cue_sprite        | PCIN+(A:0x0):B                     | 30     | 11     | -      | -      | -1     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|cue_sprite        | A*(B:0x39)                         | 12     | 6      | -      | -      | 18     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|cue_sprite        | PCIN+(A:0x0):B+C                   | 30     | 12     | 12     | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|XADCdemo          | (A:0x3d090)*B                      | 18     | 12     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | A*B                                | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|collisionResolver | (PCIN>>17)+A*B                     | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pix_gen_win       | A*(B:0x34)                         | 12     | 6      | -      | -      | 18     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pix_gen_win       | PCIN+(A:0x0):B+(C:0xfffffffffede)  | 30     | 10     | 10     | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pix_gen_win       | A*(B:0xa1)                         | 13     | 8      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pix_gen_win       | PCIN+(A:0x0):B+(C:0xffffffffff0d)  | 30     | 10     | 9      | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pix_gen_menu      | A*(B:0x99)                         | 13     | 8      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pix_gen_menu      | PCIN+(A:0x0):B+(C:0xffffffffff0c)  | 30     | 10     | 9      | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pix_gen_menu      | A*(B:0x7e)                         | 13     | 7      | -      | -      | 20     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pix_gen_menu      | PCIN+(A:0x0):B+(C:0xfffffffffef9)  | 30     | 10     | 10     | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pix_gen_menu      | A*(B:0xc4)                         | 14     | 8      | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pix_gen_menu      | PCIN+(A:0x0):B+(C:0xffffffffff18)  | 30     | 10     | 9      | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|display           | A*(B:0xa0)                         | 13     | 8      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|display           | PCIN+(A:0x0):B2+(C:0xffffffffff11) | 30     | 10     | 9      | -      | -1     | 0    | 1    | 0    | -    | -     | 0    | 0    | 
++------------------+------------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:34 ; elapsed = 00:05:23 . Memory (MB): peak = 1797.164 ; gain = 770.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:39 ; elapsed = 00:05:32 . Memory (MB): peak = 1797.164 ; gain = 770.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:55 ; elapsed = 00:05:58 . Memory (MB): peak = 1797.164 ; gain = 770.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \x1/XLXI_7  has unconnected pin di_in[15]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \x1/XLXI_7  has unconnected pin di_in[14]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \x1/XLXI_7  has unconnected pin di_in[13]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \x1/XLXI_7  has unconnected pin di_in[12]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \x1/XLXI_7  has unconnected pin di_in[11]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \x1/XLXI_7  has unconnected pin di_in[10]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \x1/XLXI_7  has unconnected pin di_in[9]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \x1/XLXI_7  has unconnected pin di_in[8]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \x1/XLXI_7  has unconnected pin di_in[7]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \x1/XLXI_7  has unconnected pin di_in[6]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \x1/XLXI_7  has unconnected pin di_in[5]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \x1/XLXI_7  has unconnected pin di_in[4]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \x1/XLXI_7  has unconnected pin di_in[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \x1/XLXI_7  has unconnected pin di_in[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \x1/XLXI_7  has unconnected pin di_in[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \x1/XLXI_7  has unconnected pin di_in[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \x1/XLXI_7  has unconnected pin dwe_in
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \x1/XLXI_7  has unconnected pin vp_in
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \x1/XLXI_7  has unconnected pin vn_in
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:58 ; elapsed = 00:06:04 . Memory (MB): peak = 1797.164 ; gain = 770.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:58 ; elapsed = 00:06:04 . Memory (MB): peak = 1797.164 ; gain = 770.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:00 ; elapsed = 00:06:07 . Memory (MB): peak = 1797.164 ; gain = 770.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:03:00 ; elapsed = 00:06:07 . Memory (MB): peak = 1797.164 ; gain = 770.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:03:01 ; elapsed = 00:06:08 . Memory (MB): peak = 1797.164 ; gain = 770.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:03:01 ; elapsed = 00:06:08 . Memory (MB): peak = 1797.164 ; gain = 770.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |xadc_wiz_0    |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |xadc_wiz |     1|
+|2     |BUFG     |     4|
+|3     |CARRY4   |  1811|
+|4     |DSP48E1  |    87|
+|5     |LUT1     |   283|
+|6     |LUT2     |  3407|
+|7     |LUT3     |   859|
+|8     |LUT4     |  2446|
+|9     |LUT5     |  2578|
+|10    |LUT6     | 12017|
+|11    |MUXF7    |  4132|
+|12    |MUXF8    |  1341|
+|13    |FDRE     |  1191|
+|14    |FDSE     |    67|
+|15    |IBUF     |    17|
+|16    |OBUF     |    28|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:03:01 ; elapsed = 00:06:08 . Memory (MB): peak = 1797.164 ; gain = 770.309
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 19 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:57 ; elapsed = 00:06:05 . Memory (MB): peak = 1797.164 ; gain = 671.027
+Synthesis Optimization Complete : Time (s): cpu = 00:03:01 ; elapsed = 00:06:08 . Memory (MB): peak = 1797.164 ; gain = 770.309
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.444 . Memory (MB): peak = 1797.164 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 7371 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1797.164 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+104 Infos, 36 Warnings, 19 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:03:07 ; elapsed = 00:06:22 . Memory (MB): peak = 1797.164 ; gain = 770.309
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.runs/synth_1/display.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file display_utilization_synth.rpt -pb display_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Dec 17 03:56:18 2023...
