@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-| Date         : Sun Dec 17 04:00:39 2023
+| Date         : Mon Dec 18 09:51:00 2023
 | Host         : LAPTOP-D5M397KF running 64-bit major release  (build 9200)
 | Command      : report_methodology -file display_methodology_drc_routed.rpt -pb display_methodology_drc_routed.pb -rpx display_methodology_drc_routed.rpx
 | Design       : display
@@ -23,14 +23,14 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 1122
+             Violations found: 1123
 +-----------+------------------+-------------------------------+------------+
 | Rule      | Severity         | Description                   | Violations |
 +-----------+------------------+-------------------------------+------------+
 | TIMING-17 | Critical Warning | Non-clocked sequential cell   | 1000       |
 | SYNTH-10  | Warning          | Wide multiplier               | 87         |
 | TIMING-16 | Warning          | Large setup violation         | 14         |
-| TIMING-18 | Warning          | Missing input or output delay | 21         |
+| TIMING-18 | Warning          | Missing input or output delay | 22         |
 +-----------+------------------+-------------------------------+------------+
 
 2. REPORT DETAILS
@@ -4757,62 +4757,62 @@ Related violations: <none>
 
 TIMING-17#945 Critical Warning
 Non-clocked sequential cell  
-The clock pin u2/h_count_reg[4]__0_rep/C is not reached by a timing clock
+The clock pin u2/h_count_reg[5]__0/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#946 Critical Warning
 Non-clocked sequential cell  
-The clock pin u2/h_count_reg[5]__0/C is not reached by a timing clock
+The clock pin u2/h_count_reg[5]__0_rep/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#947 Critical Warning
 Non-clocked sequential cell  
-The clock pin u2/h_count_reg[5]__0_rep/C is not reached by a timing clock
+The clock pin u2/h_count_reg[6]__0/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#948 Critical Warning
 Non-clocked sequential cell  
-The clock pin u2/h_count_reg[6]__0/C is not reached by a timing clock
+The clock pin u2/h_count_reg[6]__0_rep/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#949 Critical Warning
 Non-clocked sequential cell  
-The clock pin u2/h_count_reg[6]__0_rep/C is not reached by a timing clock
+The clock pin u2/h_count_reg[7]__0/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#950 Critical Warning
 Non-clocked sequential cell  
-The clock pin u2/h_count_reg[7]__0/C is not reached by a timing clock
+The clock pin u2/h_count_reg[7]__0_rep/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#951 Critical Warning
 Non-clocked sequential cell  
-The clock pin u2/h_count_reg[7]__0_rep/C is not reached by a timing clock
+The clock pin u2/h_count_reg[8]__0/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#952 Critical Warning
 Non-clocked sequential cell  
-The clock pin u2/h_count_reg[8]__0/C is not reached by a timing clock
+The clock pin u2/h_count_reg[9]__0/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#953 Critical Warning
 Non-clocked sequential cell  
-The clock pin u2/h_count_reg[9]__0/C is not reached by a timing clock
+The clock pin u2/trig_v_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#954 Critical Warning
 Non-clocked sequential cell  
-The clock pin u2/trig_v_reg/C is not reached by a timing clock
+The clock pin u3/v_count_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#955 Critical Warning
 Non-clocked sequential cell  
-The clock pin u3/v_count_reg[0]/C is not reached by a timing clock
+The clock pin u3/v_count_reg[0]_rep/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#956 Critical Warning
 Non-clocked sequential cell  
-The clock pin u3/v_count_reg[0]_rep/C is not reached by a timing clock
+The clock pin u3/v_count_reg[0]_rep__0/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#957 Critical Warning
@@ -5472,175 +5472,180 @@ Related violations: <none>
 
 TIMING-16#1 Warning
 Large setup violation  
-There is a large setup violation of -5.902 ns between x1/XLXI_7/U0/DCLK (clocked by sys_clk_pin) and x1/dig6_reg[1]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -6.673 ns between x1/XLXI_7/U0/DCLK (clocked by sys_clk_pin) and x1/dig6_reg[0]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#2 Warning
 Large setup violation  
-There is a large setup violation of -6.227 ns between x1/XLXI_7/U0/DCLK (clocked by sys_clk_pin) and x1/dig6_reg[0]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -6.709 ns between x1/XLXI_7/U0/DCLK (clocked by sys_clk_pin) and x1/dig6_reg[1]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#3 Warning
 Large setup violation  
-There is a large setup violation of -6.384 ns between x1/XLXI_7/U0/DCLK (clocked by sys_clk_pin) and x1/dig5_reg[2]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -6.748 ns between x1/XLXI_7/U0/DCLK (clocked by sys_clk_pin) and x1/dig3_reg[0]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#4 Warning
 Large setup violation  
-There is a large setup violation of -6.389 ns between x1/XLXI_7/U0/DCLK (clocked by sys_clk_pin) and x1/dig5_reg[1]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -6.761 ns between x1/XLXI_7/U0/DCLK (clocked by sys_clk_pin) and x1/dig5_reg[2]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#5 Warning
 Large setup violation  
-There is a large setup violation of -6.412 ns between x1/XLXI_7/U0/DCLK (clocked by sys_clk_pin) and x1/dig5_reg[3]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -6.828 ns between x1/XLXI_7/U0/DCLK (clocked by sys_clk_pin) and x1/dig3_reg[3]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#6 Warning
 Large setup violation  
-There is a large setup violation of -6.483 ns between x1/XLXI_7/U0/DCLK (clocked by sys_clk_pin) and x1/dig4_reg[1]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -6.872 ns between x1/XLXI_7/U0/DCLK (clocked by sys_clk_pin) and x1/dig5_reg[1]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#7 Warning
 Large setup violation  
-There is a large setup violation of -6.499 ns between x1/XLXI_7/U0/DCLK (clocked by sys_clk_pin) and x1/dig5_reg[0]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -6.882 ns between x1/XLXI_7/U0/DCLK (clocked by sys_clk_pin) and x1/dig5_reg[3]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#8 Warning
 Large setup violation  
-There is a large setup violation of -6.512 ns between x1/XLXI_7/U0/DCLK (clocked by sys_clk_pin) and x1/dig3_reg[1]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -6.933 ns between x1/XLXI_7/U0/DCLK (clocked by sys_clk_pin) and x1/dig4_reg[0]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#9 Warning
 Large setup violation  
-There is a large setup violation of -6.551 ns between x1/XLXI_7/U0/DCLK (clocked by sys_clk_pin) and x1/dig4_reg[3]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -6.946 ns between x1/XLXI_7/U0/DCLK (clocked by sys_clk_pin) and x1/dig4_reg[3]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#10 Warning
 Large setup violation  
-There is a large setup violation of -6.568 ns between x1/XLXI_7/U0/DCLK (clocked by sys_clk_pin) and x1/dig3_reg[0]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -6.949 ns between x1/XLXI_7/U0/DCLK (clocked by sys_clk_pin) and x1/dig5_reg[0]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#11 Warning
 Large setup violation  
-There is a large setup violation of -6.591 ns between x1/XLXI_7/U0/DCLK (clocked by sys_clk_pin) and x1/dig3_reg[3]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -6.953 ns between x1/XLXI_7/U0/DCLK (clocked by sys_clk_pin) and x1/dig3_reg[1]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#12 Warning
 Large setup violation  
-There is a large setup violation of -6.618 ns between x1/XLXI_7/U0/DCLK (clocked by sys_clk_pin) and x1/dig3_reg[2]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -7.011 ns between x1/XLXI_7/U0/DCLK (clocked by sys_clk_pin) and x1/dig4_reg[2]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#13 Warning
 Large setup violation  
-There is a large setup violation of -6.621 ns between x1/XLXI_7/U0/DCLK (clocked by sys_clk_pin) and x1/dig4_reg[0]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -7.064 ns between x1/XLXI_7/U0/DCLK (clocked by sys_clk_pin) and x1/dig3_reg[2]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#14 Warning
 Large setup violation  
-There is a large setup violation of -6.724 ns between x1/XLXI_7/U0/DCLK (clocked by sys_clk_pin) and x1/dig4_reg[2]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -7.111 ns between x1/XLXI_7/U0/DCLK (clocked by sys_clk_pin) and x1/dig4_reg[1]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-18#1 Warning
 Missing input or output delay  
-An input delay is missing on hit relative to clock(s) sys_clk_pin
+An input delay is missing on hitFPGA relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#2 Warning
 Missing input or output delay  
-An input delay is missing on switchReset relative to clock(s) sys_clk_pin
+An input delay is missing on hitPB relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#3 Warning
 Missing input or output delay  
-An output delay is missing on blue[0] relative to clock(s) sys_clk_pin
+An input delay is missing on switchReset relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#4 Warning
 Missing input or output delay  
-An output delay is missing on blue[1] relative to clock(s) sys_clk_pin
+An output delay is missing on blue[0] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#5 Warning
 Missing input or output delay  
-An output delay is missing on blue[2] relative to clock(s) sys_clk_pin
+An output delay is missing on blue[1] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#6 Warning
 Missing input or output delay  
-An output delay is missing on blue[3] relative to clock(s) sys_clk_pin
+An output delay is missing on blue[2] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#7 Warning
 Missing input or output delay  
-An output delay is missing on green[0] relative to clock(s) sys_clk_pin
+An output delay is missing on blue[3] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#8 Warning
 Missing input or output delay  
-An output delay is missing on green[1] relative to clock(s) sys_clk_pin
+An output delay is missing on green[0] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#9 Warning
 Missing input or output delay  
-An output delay is missing on green[2] relative to clock(s) sys_clk_pin
+An output delay is missing on green[1] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#10 Warning
 Missing input or output delay  
-An output delay is missing on green[3] relative to clock(s) sys_clk_pin
+An output delay is missing on green[2] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#11 Warning
 Missing input or output delay  
-An output delay is missing on red[0] relative to clock(s) sys_clk_pin
+An output delay is missing on green[3] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#12 Warning
 Missing input or output delay  
-An output delay is missing on red[1] relative to clock(s) sys_clk_pin
+An output delay is missing on red[0] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#13 Warning
 Missing input or output delay  
-An output delay is missing on red[2] relative to clock(s) sys_clk_pin
+An output delay is missing on red[1] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#14 Warning
 Missing input or output delay  
-An output delay is missing on red[3] relative to clock(s) sys_clk_pin
+An output delay is missing on red[2] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#15 Warning
 Missing input or output delay  
-An output delay is missing on seg[0] relative to clock(s) sys_clk_pin
+An output delay is missing on red[3] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#16 Warning
 Missing input or output delay  
-An output delay is missing on seg[1] relative to clock(s) sys_clk_pin
+An output delay is missing on seg[0] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#17 Warning
 Missing input or output delay  
-An output delay is missing on seg[2] relative to clock(s) sys_clk_pin
+An output delay is missing on seg[1] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#18 Warning
 Missing input or output delay  
-An output delay is missing on seg[3] relative to clock(s) sys_clk_pin
+An output delay is missing on seg[2] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#19 Warning
 Missing input or output delay  
-An output delay is missing on seg[4] relative to clock(s) sys_clk_pin
+An output delay is missing on seg[3] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#20 Warning
 Missing input or output delay  
-An output delay is missing on seg[5] relative to clock(s) sys_clk_pin
+An output delay is missing on seg[4] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#21 Warning
+Missing input or output delay  
+An output delay is missing on seg[5] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#22 Warning
 Missing input or output delay  
 An output delay is missing on seg[6] relative to clock(s) sys_clk_pin
 Related violations: <none>

@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-| Date         : Sun Dec 17 03:58:28 2023
+| Date         : Mon Dec 18 09:48:38 2023
 | Host         : LAPTOP-D5M397KF running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file display_control_sets_placed.rpt
 | Design       : display
@@ -40,14 +40,14 @@ Table of Contents
 |       Fanout       | Count |
 +--------------------+-------+
 | Total control sets |    72 |
-| >= 0 to < 4        |     3 |
+| >= 0 to < 4        |     4 |
 | >= 4 to < 6        |    18 |
-| >= 6 to < 8        |     2 |
+| >= 6 to < 8        |     1 |
 | >= 8 to < 10       |     3 |
 | >= 10 to < 12      |    14 |
 | >= 12 to < 14      |     2 |
-| >= 14 to < 16      |     1 |
-| >= 16              |    29 |
+| >= 14 to < 16      |     2 |
+| >= 16              |    28 |
 +--------------------+-------+
 * Control sets can be remapped at either synth_design or opt_design
 
@@ -58,12 +58,12 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |             659 |          174 |
+| No           | No                    | No                     |             656 |          174 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |             281 |          123 |
-| Yes          | No                    | No                     |             228 |           58 |
+| No           | Yes                   | No                     |             280 |          109 |
+| Yes          | No                    | No                     |             229 |           59 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |              90 |           43 |
+| Yes          | Yes                   | No                     |              93 |           43 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
@@ -74,77 +74,77 @@ Table of Contents
 |        Clock Signal        |          Enable Signal         |       Set/Reset Signal      | Slice Load Count | Bel Load Count | Bels / Slice |
 +----------------------------+--------------------------------+-----------------------------+------------------+----------------+--------------+
 | ~v_sync_OBUF_BUFG          |                                |                             |                1 |              1 |         1.00 |
-|  clk_d_BUFG                | u2/v_trig                      |                             |                1 |              2 |         2.00 |
+|  moverFlag_BUFG[1]         |                                |                             |                3 |              3 |         1.00 |
+|  clk_d_BUFG                | u2/v_trig                      |                             |                2 |              3 |         1.50 |
 |  x1/segment1/XLXI_47/CLK   |                                |                             |                1 |              3 |         3.00 |
-|  moverFlag_BUFG[1]         | strokes0                       | RSTC                        |                1 |              4 |         4.00 |
+|  v_sync_OBUF_BUFG          | MV/mv_b/bu_y_reg[2]            |                             |                1 |              4 |         4.00 |
 |  v_sync_OBUF_BUFG          | MV/mv_b/bu_x_reg[2]            |                             |                1 |              4 |         4.00 |
-|  v_sync_OBUF_BUFG          | MV/mv_w/u_x_reg[2]             |                             |                1 |              4 |         4.00 |
+|  moverFlag_BUFG[1]         | strokes1                       | rx_i                        |                1 |              4 |         4.00 |
 |  clk_IBUF_BUFG             | x1/Vrx[3]_i_1_n_0              |                             |                1 |              4 |         4.00 |
-|  v_sync_OBUF_BUFG          | MV/mv_g/gu_x_reg[2]            |                             |                1 |              4 |         4.00 |
+|  moverFlag_BUFG[1]         | strokes0                       | RSTC                        |                2 |              4 |         2.00 |
 |  clk_IBUF_BUFG             | x1/sw_reg_n_0                  |                             |                2 |              4 |         2.00 |
-|  v_sync_OBUF_BUFG          | MV/mv_g/gu_y_reg[2]            |                             |                1 |              4 |         4.00 |
+|  v_sync_OBUF_BUFG          | MV/mv_w/u_x_reg[2]             |                             |                1 |              4 |         4.00 |
+|  v_sync_OBUF_BUFG          | MV/mv_y/yu_y_reg[2]            |                             |                1 |              4 |         4.00 |
+|  v_sync_OBUF_BUFG          | MV/mv_y/yu_x_reg[2]            |                             |                1 |              4 |         4.00 |
 |  v_sync_OBUF_BUFG          | MV/mv_w/u_y_reg[2]             |                             |                1 |              4 |         4.00 |
 |  v_sync_OBUF_BUFG          | MV/mv_r/counterX[3]_i_1_n_0    |                             |                1 |              4 |         4.00 |
-|  moverFlag_BUFG[1]         | strokes1                       | rx_i                        |                1 |              4 |         4.00 |
 |  v_sync_OBUF_BUFG          | MV/mv_r/counterY[3]_i_1__2_n_0 |                             |                1 |              4 |         4.00 |
-|  v_sync_OBUF_BUFG          | MV/mv_m/mu_x_reg[2]            |                             |                1 |              4 |         4.00 |
 |  v_sync_OBUF_BUFG          | MV/mv_m/mu_y_reg[2]            |                             |                1 |              4 |         4.00 |
-|  v_sync_OBUF_BUFG          | MV/mv_c/cu_x_reg[2]            |                             |                1 |              4 |         4.00 |
+|  v_sync_OBUF_BUFG          | MV/mv_m/mu_x_reg[2]            |                             |                1 |              4 |         4.00 |
+|  v_sync_OBUF_BUFG          | MV/mv_g/gu_x_reg[2]            |                             |                1 |              4 |         4.00 |
+|  v_sync_OBUF_BUFG          | MV/mv_g/gu_y_reg[2]            |                             |                1 |              4 |         4.00 |
 |  v_sync_OBUF_BUFG          | MV/mv_c/cu_y_reg[2]            |                             |                1 |              4 |         4.00 |
-|  v_sync_OBUF_BUFG          | MV/mv_y/yu_x_reg[2]            |                             |                1 |              4 |         4.00 |
-|  v_sync_OBUF_BUFG          | MV/mv_y/yu_y_reg[2]            |                             |                1 |              4 |         4.00 |
-|  v_sync_OBUF_BUFG          | MV/mv_b/bu_y_reg[2]            |                             |                1 |              4 |         4.00 |
-|  v_sync_OBUF_BUFG          | MV/mv_w/strength[6]_i_2_n_0    | MV/mv_w/strength[6]_i_1_n_0 |                1 |              6 |         6.00 |
-|  moverFlag_BUFG[1]         |                                |                             |                5 |              6 |         1.20 |
-|  clk_IBUF_BUFG             | beststrokes0                   |                             |                3 |              8 |         2.67 |
-|  clk_d_BUFG                |                                | u2/h_count_reg[8]__0_5      |                6 |              8 |         1.33 |
-|  clk_d_BUFG                |                                | u3/h_count_reg[8]__0_3      |                6 |              8 |         1.33 |
-|  v_sync_OBUF_BUFG          | MV/mv_r/y_f[10]_i_1__0_n_0     |                             |                2 |             11 |         5.50 |
-|  v_sync_OBUF_BUFG          | MV/mv_g/x_f[10]_i_1__2_n_0     |                             |                2 |             11 |         5.50 |
-|  v_sync_OBUF_BUFG          | MV/mv_w/x_f[10]_i_1_n_0        |                             |                2 |             11 |         5.50 |
-|  v_sync_OBUF_BUFG          | MV/mv_w/y_f[10]_i_1_n_0        |                             |                3 |             11 |         3.67 |
-|  v_sync_OBUF_BUFG          | MV/mv_y/x_f[10]_i_1__3_n_0     |                             |                2 |             11 |         5.50 |
-|  v_sync_OBUF_BUFG          | MV/mv_y/y_f[10]_i_1__3_n_0     |                             |                2 |             11 |         5.50 |
-|  v_sync_OBUF_BUFG          | MV/mv_b/y_f[10]_i_1__1_n_0     |                             |                2 |             11 |         5.50 |
-|  v_sync_OBUF_BUFG          | MV/mv_g/y_f[10]_i_1__2_n_0     |                             |                3 |             11 |         3.67 |
-|  v_sync_OBUF_BUFG          | MV/mv_c/x_f[10]_i_1__5_n_0     |                             |                2 |             11 |         5.50 |
-|  v_sync_OBUF_BUFG          | MV/mv_c/y_f[10]_i_1__5_n_0     |                             |                3 |             11 |         3.67 |
-|  v_sync_OBUF_BUFG          | MV/mv_b/x_f[10]_i_1__1_n_0     |                             |                5 |             11 |         2.20 |
+|  v_sync_OBUF_BUFG          | MV/mv_c/cu_x_reg[2]            |                             |                1 |              4 |         4.00 |
+|  v_sync_OBUF_BUFG          | MV/mv_w/strength[6]_i_2_n_0    | MV/mv_w/strength[6]_i_1_n_0 |                3 |              6 |         2.00 |
+|  clk_d_BUFG                |                                | u3/h_count_reg[8]__0_3      |                5 |              8 |         1.60 |
+|  clk_IBUF_BUFG             | beststrokes0                   |                             |                2 |              8 |         4.00 |
+|  clk_d_BUFG                |                                | u2/h_count_reg[8]__0_5      |                8 |              8 |         1.00 |
+|  v_sync_OBUF_BUFG          | MV/mv_g/x_f[10]_i_1__2_n_0     |                             |                3 |             11 |         3.67 |
 |  v_sync_OBUF_BUFG          | MV/mv_m/x_f[10]_i_1__4_n_0     |                             |                3 |             11 |         3.67 |
 |  v_sync_OBUF_BUFG          | MV/mv_m/y_f[10]_i_1__4_n_0     |                             |                3 |             11 |         3.67 |
-|  v_sync_OBUF_BUFG          | MV/mv_r/x_f[10]_i_1__0_n_0     |                             |                3 |             11 |         3.67 |
-|  clk_d_BUFG                | u2/beststrokes1_reg[3]         | u3/v_count_reg[8]_10        |                8 |             12 |         1.50 |
-|  clk_d_BUFG                |                                | u2/SR[0]                    |                8 |             12 |         1.50 |
-|  clk_IBUF_BUFG             | x1/dig3[3]_i_2_n_0             | x1/dig3                     |                9 |             14 |         1.56 |
-|  clk_d_BUFG                |                                | u2/clear                    |               12 |             16 |         1.33 |
-|  collisionFlag_reg_n_0_[1] |                                |                             |                4 |             20 |         5.00 |
-|  CR/cr_gm/collision18[0]   |                                |                             |                3 |             20 |         6.67 |
-|  CR/cr_rc/collision12[0]   |                                |                             |                4 |             20 |         5.00 |
-|  CR/cr_rg/collision9[0]    |                                |                             |                4 |             20 |         5.00 |
-|  CR/cr_rb/collision8[0]    |                                |                             |                5 |             20 |         4.00 |
-|  CR/cr_wg/collision4[0]    |                                |                             |                5 |             20 |         4.00 |
+|  v_sync_OBUF_BUFG          | MV/mv_r/x_f[10]_i_1__0_n_0     |                             |                2 |             11 |         5.50 |
+|  v_sync_OBUF_BUFG          | MV/mv_r/y_f[10]_i_1__0_n_0     |                             |                3 |             11 |         3.67 |
+|  v_sync_OBUF_BUFG          | MV/mv_w/x_f[10]_i_1_n_0        |                             |                2 |             11 |         5.50 |
+|  v_sync_OBUF_BUFG          | MV/mv_w/y_f[10]_i_1_n_0        |                             |                3 |             11 |         3.67 |
+|  v_sync_OBUF_BUFG          | MV/mv_y/x_f[10]_i_1__3_n_0     |                             |                4 |             11 |         2.75 |
+|  v_sync_OBUF_BUFG          | MV/mv_y/y_f[10]_i_1__3_n_0     |                             |                2 |             11 |         5.50 |
+|  v_sync_OBUF_BUFG          | MV/mv_g/y_f[10]_i_1__2_n_0     |                             |                2 |             11 |         5.50 |
+|  v_sync_OBUF_BUFG          | MV/mv_b/y_f[10]_i_1__1_n_0     |                             |                3 |             11 |         3.67 |
+|  v_sync_OBUF_BUFG          | MV/mv_b/x_f[10]_i_1__1_n_0     |                             |                2 |             11 |         5.50 |
+|  v_sync_OBUF_BUFG          | MV/mv_c/x_f[10]_i_1__5_n_0     |                             |                3 |             11 |         3.67 |
+|  v_sync_OBUF_BUFG          | MV/mv_c/y_f[10]_i_1__5_n_0     |                             |                3 |             11 |         3.67 |
+|  clk_d_BUFG                | u2/beststrokes1_reg[3]         | u3/v_count_reg[8]_11        |                8 |             12 |         1.50 |
+|  clk_d_BUFG                |                                | u2/SR[0]                    |                9 |             12 |         1.33 |
+|  clk_IBUF_BUFG             | x1/dig3[3]_i_2_n_0             | x1/dig3                     |               10 |             14 |         1.40 |
+|  clk_d_BUFG                |                                | u2/clear                    |                8 |             15 |         1.88 |
+|  CR/cr_rb/collision8[0]    |                                |                             |                4 |             20 |         5.00 |
 |  CR/cr_wm/collision6[0]    |                                |                             |                4 |             20 |         5.00 |
-|  CR/cr_wy/collision5[0]    |                                |                             |                3 |             20 |         6.67 |
-|  CR/cr_gy/collision17[0]   |                                |                             |                5 |             20 |         4.00 |
-|  CR/cr_bc/collision16[0]   |                                |                             |                3 |             20 |         6.67 |
-|  CR/cr_wc/collision7[0]    |                                |                             |                4 |             20 |         5.00 |
+|  CR/cr_wc/collision7[0]    |                                |                             |                5 |             20 |         4.00 |
+|  CR/cr_wg/collision4[0]    |                                |                             |                6 |             20 |         3.33 |
 |  CR/cr_ry/collision10[0]   |                                |                             |                4 |             20 |         5.00 |
-|  CR/cr_wb/collision3[0]    |                                |                             |                4 |             20 |         5.00 |
-|  CR/cr_rm/collision11[0]   |                                |                             |                3 |             20 |         6.67 |
-|  CR/cr_wr/collision2[0]    |                                |                             |                4 |             20 |         5.00 |
-|  CR/cr_yc/collision21[0]   |                                |                             |                4 |             20 |         5.00 |
-|  CR/cr_ym/collision20[0]   |                                |                             |                4 |             20 |         5.00 |
-|  CR/cr_bg/collision13[0]   |                                |                             |                4 |             20 |         5.00 |
-|  CR/cr_bm/collision15[0]   |                                |                             |                3 |             20 |         6.67 |
-|  CR/cr_by/collision14[0]   |                                |                             |                3 |             20 |         6.67 |
+|  CR/cr_wb/collision3[0]    |                                |                             |                3 |             20 |         6.67 |
+|  CR/cr_rm/collision11[0]   |                                |                             |                4 |             20 |         5.00 |
+|  CR/cr_rc/collision12[0]   |                                |                             |                5 |             20 |         4.00 |
+|  CR/cr_rg/collision9[0]    |                                |                             |                3 |             20 |         6.67 |
+|  CR/cr_bc/collision16[0]   |                                |                             |                3 |             20 |         6.67 |
+|  collisionFlag_reg_n_0_[1] |                                |                             |                6 |             20 |         3.33 |
 |  CR/cr_gc/collision19[0]   |                                |                             |                4 |             20 |         5.00 |
-|  clk_d_BUFG                | u2/v_trig                      | u3/v_count[9]_i_1_n_0       |                9 |             21 |         2.33 |
-|  clk_d_BUFG                |                                |                             |               15 |             22 |         1.47 |
-|  moverFlag_BUFG[1]         | MV/mv_w/u_y                    | rx_i                        |               14 |             29 |         2.07 |
+|  CR/cr_by/collision14[0]   |                                |                             |                5 |             20 |         4.00 |
+|  CR/cr_bm/collision15[0]   |                                |                             |                4 |             20 |         5.00 |
+|  CR/cr_bg/collision13[0]   |                                |                             |                5 |             20 |         4.00 |
+|  CR/cr_ym/collision20[0]   |                                |                             |                4 |             20 |         5.00 |
+|  CR/cr_gy/collision17[0]   |                                |                             |                4 |             20 |         5.00 |
+|  CR/cr_yc/collision21[0]   |                                |                             |                3 |             20 |         6.67 |
+|  CR/cr_wy/collision5[0]    |                                |                             |                4 |             20 |         5.00 |
+|  CR/cr_wr/collision2[0]    |                                |                             |                3 |             20 |         6.67 |
+|  CR/cr_gm/collision18[0]   |                                |                             |                3 |             20 |         6.67 |
+|  clk_d_BUFG                | u2/v_trig                      | u3/v_count[9]_i_1_n_0       |               11 |             21 |         1.91 |
+|  clk_d_BUFG                |                                |                             |               13 |             22 |         1.69 |
 |  clk_IBUF_BUFG             |                                | x1/sw                       |                8 |             32 |         4.00 |
-|  v_sync_OBUF_BUFG          |                                |                             |               33 |             80 |         2.42 |
-|  clk_IBUF_BUFG             |                                |                             |               38 |            127 |         3.34 |
-|  moverFlag_BUFG[1]         |                                | rx_i                        |               83 |            205 |         2.47 |
+|  moverFlag_BUFG[1]         | MV/mv_w/u_y                    | rx_i                        |                8 |             32 |         4.00 |
+|  v_sync_OBUF_BUFG          |                                |                             |               30 |             80 |         2.67 |
+|  clk_IBUF_BUFG             |                                |                             |               40 |            127 |         3.17 |
+|  moverFlag_BUFG[1]         |                                | rx_i                        |               71 |            205 |         2.89 |
 +----------------------------+--------------------------------+-----------------------------+------------------+----------------+--------------+
 
 

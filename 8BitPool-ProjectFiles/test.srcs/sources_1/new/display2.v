@@ -3,7 +3,7 @@
 module display(
 input switchReset,
 input clk,
-input hit,
+input hitFPGA,
 input joy,
 input vauxp6,
 input vauxn6,
@@ -18,6 +18,7 @@ input downB,
 input leftB,
 input upB,
 input rightB,
+input hitPB,
 output [3:0] an,
 output dp,
 output [6:0] seg,
@@ -53,6 +54,9 @@ output joyLED
 //output  reg [4:0] u_y
 //,output v_sync_d
 );
+
+wire hit;
+assign hit = hitFPGA | hitPB;
 
 wire clk_d; 
 wire [9:0] h_count;

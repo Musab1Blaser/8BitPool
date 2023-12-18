@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="49" Path="C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.xpr">
+<Project Version="7" Minor="49" Path="C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="70f6ac49c5fd438fa245c63bb6b011ee"/>
@@ -297,13 +297,13 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../Project/8Ball_Pool_Project/8Ball_Pool_Project.srcs/sources_1/new/diag_cue_pal.mem">
+      <File Path="$PPRDIR/../../../Project/8Ball_Pool_Project/8Ball_Pool_Project.srcs/sources_1/new/diag_cue_pal.mem">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../Project/8Ball_Pool_Project/8Ball_Pool_Project.srcs/sources_1/new/diag_cue.mem">
+      <File Path="$PPRDIR/../../../Project/8Ball_Pool_Project/8Ball_Pool_Project.srcs/sources_1/new/diag_cue.mem">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -532,6 +532,18 @@
         </FileInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/new/overScreen/GameOver_data.mem">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/score/shots_data.mem">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/score/shots_pal.mem">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>

@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.runs/impl_1'
+HD_PWD='C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

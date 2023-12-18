@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.runs/synth_1/display.tcl"
+  variable script "C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.runs/synth_1/display.tcl"
   variable category "vivado_synth"
 }
 
@@ -79,88 +79,90 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.cache/wt} [current_project]
-set_property parent.project_path {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.xpr} [current_project]
+set_property webtalk.parent_dir {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.cache/wt} [current_project]
+set_property parent.project_path {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.xpr} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo {c:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.cache/ip} [current_project]
+set_property ip_output_repo {c:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_mem {
-  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/ball3.mem}
-  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/ball.mem}
-  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/vert_cue_pal.mem}
-  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/vert_cue.mem}
-  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/vert_cue_data_2.mem}
-  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/vert_cue_pal_4.mem}
+  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.srcs/sources_1/new/ball3.mem}
+  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.srcs/sources_1/new/ball.mem}
+  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.srcs/sources_1/new/vert_cue_pal.mem}
+  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.srcs/sources_1/new/vert_cue.mem}
+  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.srcs/sources_1/new/vert_cue_data_2.mem}
+  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.srcs/sources_1/new/vert_cue_pal_4.mem}
   {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project/8Ball_Pool_Project/8Ball_Pool_Project.srcs/sources_1/new/diag_cue_pal.mem}
   {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project/8Ball_Pool_Project/8Ball_Pool_Project.srcs/sources_1/new/diag_cue.mem}
-  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/score/8_data.mem}
-  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/score/0_pal.mem}
-  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/score/5_data.mem}
-  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/score/9_pal.mem}
-  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/score/2_data.mem}
-  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/score/8_pal.mem}
-  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/score/9_data.mem}
-  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/score/score_text_data.mem}
-  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/score/best_text_pal.mem}
-  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/score/4_pal.mem}
-  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/score/0_data.mem}
-  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/score/2_pal.mem}
-  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/score/5_pal.mem}
-  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/score/4_data.mem}
-  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/score/score_text_pal.mem}
-  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/score/3_data.mem}
-  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/score/best_text_data.mem}
-  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/score/3_pal.mem}
-  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/score/1_pal.mem}
-  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/score/6_data.mem}
-  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/score/7_pal.mem}
-  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/score/6_pal.mem}
-  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/score/1_data.mem}
-  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/score/7_data.mem}
-  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/start screen/8bitpool_pal.mem}
-  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/start screen/balls_pal.mem}
-  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/start screen/8bitpool_data.mem}
-  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/start screen/balls_data.mem}
-  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/start screen/start_button_data.mem}
-  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/start screen/start_button_pal.mem}
-  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/winScreen/winBall_data.mem}
-  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/winScreen/winBall_pal.mem}
-  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/winScreen/you_win_data.mem}
-  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/winScreen/you_win_pal.mem}
-  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/overScreen/Replay_data.mem}
-  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/overScreen/GameOver_pal.mem}
-  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/overScreen/Replay_pal.mem}
-  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/overScreen/GameOver_data.mem}
+  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.srcs/sources_1/new/score/8_data.mem}
+  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.srcs/sources_1/new/score/0_pal.mem}
+  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.srcs/sources_1/new/score/5_data.mem}
+  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.srcs/sources_1/new/score/9_pal.mem}
+  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.srcs/sources_1/new/score/2_data.mem}
+  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.srcs/sources_1/new/score/8_pal.mem}
+  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.srcs/sources_1/new/score/9_data.mem}
+  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.srcs/sources_1/new/score/score_text_data.mem}
+  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.srcs/sources_1/new/score/best_text_pal.mem}
+  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.srcs/sources_1/new/score/4_pal.mem}
+  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.srcs/sources_1/new/score/0_data.mem}
+  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.srcs/sources_1/new/score/2_pal.mem}
+  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.srcs/sources_1/new/score/5_pal.mem}
+  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.srcs/sources_1/new/score/4_data.mem}
+  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.srcs/sources_1/new/score/score_text_pal.mem}
+  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.srcs/sources_1/new/score/3_data.mem}
+  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.srcs/sources_1/new/score/best_text_data.mem}
+  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.srcs/sources_1/new/score/3_pal.mem}
+  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.srcs/sources_1/new/score/1_pal.mem}
+  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.srcs/sources_1/new/score/6_data.mem}
+  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.srcs/sources_1/new/score/7_pal.mem}
+  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.srcs/sources_1/new/score/6_pal.mem}
+  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.srcs/sources_1/new/score/1_data.mem}
+  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.srcs/sources_1/new/score/7_data.mem}
+  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.srcs/sources_1/new/start screen/8bitpool_pal.mem}
+  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.srcs/sources_1/new/start screen/balls_pal.mem}
+  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.srcs/sources_1/new/start screen/8bitpool_data.mem}
+  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.srcs/sources_1/new/start screen/balls_data.mem}
+  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.srcs/sources_1/new/start screen/start_button_data.mem}
+  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.srcs/sources_1/new/start screen/start_button_pal.mem}
+  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.srcs/sources_1/new/winScreen/winBall_data.mem}
+  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.srcs/sources_1/new/winScreen/winBall_pal.mem}
+  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.srcs/sources_1/new/winScreen/you_win_data.mem}
+  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.srcs/sources_1/new/winScreen/you_win_pal.mem}
+  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.srcs/sources_1/new/overScreen/Replay_data.mem}
+  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.srcs/sources_1/new/overScreen/GameOver_pal.mem}
+  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.srcs/sources_1/new/overScreen/Replay_pal.mem}
+  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.srcs/sources_1/new/overScreen/GameOver_data.mem}
+  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.srcs/sources_1/new/score/shots_data.mem}
+  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.srcs/sources_1/new/score/shots_pal.mem}
 }
 read_verilog -library xil_defaultlib {
-  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/imports/hdl/DigitToSeg.v}
-  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/imports/hdl/XADCdemo.v}
-  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/allCollider.v}
-  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/allMover.v}
-  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/clk_div.v}
-  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/collisionResolver.v}
-  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/imports/hdl/counter3bit.v}
-  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/counter_10bit.v}
-  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/imports/hdl/decoder3_8.v}
-  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/moverModule.v}
-  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/imports/hdl/mux4_4bus.v}
-  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/pix_gen_game_over.v}
-  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/pix_gen_menu.v}
-  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/pix_gen_pool_2.v}
-  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/pix_gen_win.v}
-  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/imports/hdl/segClkDevider.v}
-  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/imports/hdl/sevensegdecoder.v}
-  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/stick_sprite.v}
-  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/v_counter.v}
-  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/vga_sync.v}
-  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/new/display2.v}
+  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.srcs/sources_1/imports/hdl/DigitToSeg.v}
+  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.srcs/sources_1/imports/hdl/XADCdemo.v}
+  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.srcs/sources_1/new/allCollider.v}
+  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.srcs/sources_1/new/allMover.v}
+  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.srcs/sources_1/new/clk_div.v}
+  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.srcs/sources_1/new/collisionResolver.v}
+  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.srcs/sources_1/imports/hdl/counter3bit.v}
+  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.srcs/sources_1/new/counter_10bit.v}
+  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.srcs/sources_1/imports/hdl/decoder3_8.v}
+  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.srcs/sources_1/new/moverModule.v}
+  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.srcs/sources_1/imports/hdl/mux4_4bus.v}
+  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.srcs/sources_1/new/pix_gen_game_over.v}
+  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.srcs/sources_1/new/pix_gen_menu.v}
+  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.srcs/sources_1/new/pix_gen_pool_2.v}
+  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.srcs/sources_1/new/pix_gen_win.v}
+  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.srcs/sources_1/imports/hdl/segClkDevider.v}
+  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.srcs/sources_1/imports/hdl/sevensegdecoder.v}
+  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.srcs/sources_1/new/stick_sprite.v}
+  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.srcs/sources_1/new/v_counter.v}
+  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.srcs/sources_1/new/vga_sync.v}
+  {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.srcs/sources_1/new/display2.v}
 }
-read_ip -quiet {{C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/ip/xadc_wiz_0/xadc_wiz_0.xci}}
-set_property used_in_implementation false [get_files -all {{c:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/ip/xadc_wiz_0/xadc_wiz_0_ooc.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/ip/xadc_wiz_0/xadc_wiz_0.xdc}}]
+read_ip -quiet {{C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.srcs/sources_1/ip/xadc_wiz_0/xadc_wiz_0.xci}}
+set_property used_in_implementation false [get_files -all {{c:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.srcs/sources_1/ip/xadc_wiz_0/xadc_wiz_0_ooc.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.srcs/sources_1/ip/xadc_wiz_0/xadc_wiz_0.xdc}}]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -171,8 +173,8 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc {{C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/constrs_1/imports/constraints/Basys3_Master.xdc}}
-set_property used_in_implementation false [get_files {{C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/constrs_1/imports/constraints/Basys3_Master.xdc}}]
+read_xdc {{C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.srcs/constrs_1/imports/constraints/Basys3_Master.xdc}}
+set_property used_in_implementation false [get_files {{C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.srcs/constrs_1/imports/constraints/Basys3_Master.xdc}}]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]

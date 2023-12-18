@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.runs/impl_1/display.tcl"
+  variable script "C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.runs/impl_1/display.tcl"
   variable category "vivado_impl"
 }
 
@@ -129,16 +129,16 @@ OPTRACE "create in-memory project" START { }
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.cache/wt} [current_project]
-  set_property parent.project_path {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.xpr} [current_project]
-  set_property ip_output_repo {{C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.cache/ip}} [current_project]
+  set_property webtalk.parent_dir {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.cache/wt} [current_project]
+  set_property parent.project_path {C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.xpr} [current_project]
+  set_property ip_output_repo {{C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.cache/ip}} [current_project]
   set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet {{C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.runs/synth_1/display.dcp}}
-  read_ip -quiet {{C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/sources_1/ip/xadc_wiz_0/xadc_wiz_0.xci}}
+  add_files -quiet {{C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.runs/synth_1/display.dcp}}
+  read_ip -quiet {{C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.srcs/sources_1/ip/xadc_wiz_0/xadc_wiz_0.xci}}
 OPTRACE "read constraints: implementation" START { }
-  read_xdc {{C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/project - scoring/Basys3-Joystick-Interfacing/test.srcs/constrs_1/imports/constraints/Basys3_Master.xdc}}
+  read_xdc {{C:/Users/Musab/OneDrive - Habib University/3rd Semester/DLD/Project - GitRepo/8BitPool/8BitPool-ProjectFiles/test.srcs/constrs_1/imports/constraints/Basys3_Master.xdc}}
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "add files" END { }
 OPTRACE "link_design" START { }

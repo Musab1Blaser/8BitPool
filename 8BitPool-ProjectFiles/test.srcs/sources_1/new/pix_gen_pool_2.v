@@ -75,6 +75,9 @@ module pix_gen_pool_2(
         $readmemb("ball3.mem", ball_design); // read memory file as bytes
         
     reg [7:0] addr;
+    
+    (*ROM_STYLE="block"*) reg [7:0] shots_text_data [0:1242]; // 54x23
+    (*ROM_STYLE="block"*) reg [11:0] shots_text_pal [0:128];
 
     (*ROM_STYLE="block"*) reg [7:0] score_text_data [0:1295]; // 54x24
     (*ROM_STYLE="block"*) reg [11:0] score_text_pal [0:115];
@@ -114,6 +117,9 @@ module pix_gen_pool_2(
 
     initial
     begin
+        $readmemh("shots_data.mem", shots_text_data);
+        $readmemh("shots_pal.mem", shots_text_pal);
+        
         $readmemh("score_text_data.mem", score_text_data);
         $readmemh("score_text_pal.mem", score_text_pal);
 
@@ -158,10 +164,10 @@ module pix_gen_pool_2(
       if (video_on) // if in frame
       // attempt to draw based off priority: score -> cue -> white ball -> other balls -> corner holes -> board bg -> board border
       begin
-        if (pixel_x > 25 & pixel_x < 25 + 54 & pixel_y > 12 & pixel_y < 12 + 24) // score
+        if (pixel_x > 25 & pixel_x < 25 + 54 & pixel_y > 12 & pixel_y < 12 + 23) // shots
         begin
-            addr = score_text_data[pixel_x-25 + 54*(pixel_y-12)];
-            {red, green, blue} <= {score_text_pal[addr]};   
+            addr = shots_text_data[pixel_x-25 + 54*(pixel_y-12)];
+            {red, green, blue} <= {shots_text_pal[addr]};   
         end
         else if (pixel_x > 456 & pixel_x < 456 + 42 & pixel_y > 13 & pixel_y < 13 + 23) // best
         begin

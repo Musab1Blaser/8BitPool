@@ -123,8 +123,8 @@ set_property PACKAGE_PIN W4 [get_ports {an[3]}]
 
 
 ##Buttons
-set_property PACKAGE_PIN U18 [get_ports hit]						
-	set_property IOSTANDARD LVCMOS33 [get_ports hit]
+set_property PACKAGE_PIN U18 [get_ports hitFPGA]						
+	set_property IOSTANDARD LVCMOS33 [get_ports hitFPGA]
 set_property PACKAGE_PIN T18 [get_ports upB]						
 	set_property IOSTANDARD LVCMOS33 [get_ports upB]
 set_property PACKAGE_PIN W19 [get_ports leftB]						
@@ -133,6 +133,8 @@ set_property PACKAGE_PIN T17 [get_ports rightB]
 	set_property IOSTANDARD LVCMOS33 [get_ports rightB]
 set_property PACKAGE_PIN U17 [get_ports downB]						
 	set_property IOSTANDARD LVCMOS33 [get_ports downB]
+set_property PACKAGE_PIN R18 [get_ports hitPB]						
+	set_property IOSTANDARD LVCMOS33 [get_ports hitPB]
  
 
 
